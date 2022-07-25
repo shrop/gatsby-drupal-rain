@@ -25,11 +25,7 @@ module.exports = {
       resolve: `gatsby-source-drupal`,
       options: {
         baseUrl: process.env.DRUPAL_URL,
-        apiBase: process.env.DRUPAL_ENDPOINT,
-        basicAuth: {
-          username: process.env.BASIC_AUTH_USERNAME,
-          password: process.env.BASIC_AUTH_PASSWORD,
-        },
+        apiBase: `jsonapi`,
         headers: {
             'api-key': process.env.JSON_API_KEY
         },
