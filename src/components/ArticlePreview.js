@@ -61,9 +61,9 @@ const ArticlePreview = ({ title, path, image, alt, summary, tags }) => (
                 spacing="3"
                 color={mode("gray.600", "gray.400")}
               >
-               {tags.map((tag) =>  (
+               {tags.map((tag, index) => index < 3 ? (
                 <Box key={tag.id}>{tag.name}</Box>
-               ))}
+               ) : '')}
               </HStack>
             </Stack>
             <Link to={`/articles${path}`}>
