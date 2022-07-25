@@ -14,7 +14,7 @@ const Home = ({ data }) => {
 
   return (
     <Layout>
-      {/* <Meta title="My Blog Site" description="An example blog site stareter." /> */}
+      {/* <Meta title="Umami Food Magazine" description="An example Drupal site starter." /> */}
       <Box
         pt={30}
         width={`100%`}
@@ -28,14 +28,12 @@ const Home = ({ data }) => {
               title={article.title}
               path={article.path.alias}
               image={
-                article.relationships.field_image.localFile.childImageSharp
+                article.relationships.field_media_image.relationships.thumbnail.localFile.childImageSharp
                   .gatsbyImageData
               }
-              alt={article.field_image.alt}
+              alt={article.relationships.field_media_image.thumbnail.alt}
               summary={
-                article.body.summary
-                  ? article.body.summary
-                  : article.body.processed.substring(0, 300)
+                article.body.processed.replace(/(<([^>]+)>)/gi, '').substring(0, 300) + '...'
               }
               tags={article.relationships.field_tags}
             />
@@ -55,19 +53,23 @@ export const pageQuery = graphql`
         created
         body {
           processed
-          summary
+          value
         }
         path {
           alias
         }
-        field_image {
-          alt
-        }
         relationships {
-          field_image {
-            localFile {
-              childImageSharp {
-                gatsbyImageData(width: 600)
+          field_media_image {
+            thumbnail {
+              alt
+            }
+            relationships {
+              thumbnail {
+                localFile {
+                  childImageSharp {
+                    gatsbyImageData(width: 600)
+                  }
+                }
               }
             }
           }

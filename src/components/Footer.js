@@ -42,7 +42,7 @@ const Footer = props => {
           spacing={{ base: "2", md: "8" }}
           textAlign={{ base: "center", md: "start" }}
         >
-          <Text>&copy; {new Date().getFullYear()} My Blog Site</Text>
+          <Text>&copy; {new Date().getFullYear()} Umami Food Magazine</Text>
         </Stack>
         <ButtonGroup
           marginStart={{ md: "auto" }}

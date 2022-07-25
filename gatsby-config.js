@@ -4,7 +4,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `My News Site`,
+    title: `Umami Food Magazine`,
     siteUrl: `https://www.yourdomain.tld`
   },
   plugins: [
@@ -29,6 +29,9 @@ module.exports = {
         basicAuth: {
           username: process.env.BASIC_AUTH_USERNAME,
           password: process.env.BASIC_AUTH_PASSWORD,
+        },
+        headers: {
+            'api-key': process.env.JSON_API_KEY
         },
         fastBuilds: true,
         filters: {
