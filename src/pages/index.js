@@ -46,11 +46,12 @@ const Home = ({ data }) => {
 
 export const pageQuery = graphql`
   {
-    allNodeArticle(sort: { fields: created, order: DESC }, limit: 10) {
+    allNodeArticle(sort: { fields: changed, order: DESC }, limit: 10) {
       nodes {
         id
         title
         created
+        changed
         body {
           processed
           value
