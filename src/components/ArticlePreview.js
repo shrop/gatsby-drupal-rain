@@ -66,7 +66,7 @@ const ArticlePreview = ({ title, path, image, alt, summary, tags }) => (
                ) : '')}
               </HStack>
             </Stack>
-            <Link to={`/articles${path}`}>
+            <Link to={`${path}`}>
               <Heading size="xl" mt="6" mb="4">
                 {title}
               </Heading>
