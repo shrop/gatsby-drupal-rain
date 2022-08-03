@@ -26,7 +26,7 @@ const Home = ({ data }) => {
             <ArticlePreview
               key={article.id}
               title={article.title}
-              path={article.path.alias}
+              path={article.langcode + article.path.alias}
               image={
                 article.relationships.field_media_image.relationships.thumbnail.localFile.childImageSharp
                   .gatsbyImageData
@@ -52,6 +52,7 @@ export const pageQuery = graphql`
         title
         created
         changed
+        langcode
         body {
           processed
           value
