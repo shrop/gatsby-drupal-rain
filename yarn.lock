@@ -6033,10 +6033,10 @@ gatsby-cli@^4.7.0:
     yoga-layout-prebuilt "^1.10.0"
     yurnalist "^2.1.0"
 
-gatsby-core-utils@3.18.0-alpha-drupal-self-reference.18+7e41ad4fb8:
-  version "3.18.0-alpha-drupal-self-reference.18"
-  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-3.18.0-alpha-drupal-self-reference.18.tgz#ebb6e7d38fe8b910998d264fd4000fe97e751e60"
-  integrity sha512-RO9S76YdbL4NhGuMbBVI0QQdha9Y6FqBRfG3tyPkS7wls/vuPIPk/W7S7UdKei2xGQPALubzZz2AkELA+GCHPg==
+gatsby-core-utils@^3.20.0:
+  version "3.20.0"
+  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-3.20.0.tgz#5f9f1b1777fdf61479f79eb9cf18a72af424c856"
+  integrity sha512-D3DIulUFoPvexwsGYFkfESL1Dd3qsxBfj8OBi8vsd6BuXrA6MbLtX3j5+BLVxfKkN2wF7XN6b3/DH+JGNuhh2A==
   dependencies:
     "@babel/runtime" "^7.15.4"
     ci-info "2.0.0"
@@ -6192,23 +6192,6 @@ gatsby-plugin-typescript@^4.7.0:
     "@babel/runtime" "^7.15.4"
     babel-plugin-remove-graphql-queries "^4.7.0"
 
-gatsby-plugin-utils@3.12.0-alpha-drupal-self-reference.18+7e41ad4fb8:
-  version "3.12.0-alpha-drupal-self-reference.18"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-3.12.0-alpha-drupal-self-reference.18.tgz#98c6ee22f7caa0ab6b315c60e218353e209c2d34"
-  integrity sha512-lVDZzcrFWMbs4UG3rSydhRdF6CK7gbdGRwXUHQpn8Xlkn1bziG/tX5aIASkN18hH91iNxWmVoMlMo+qgXSAB3Q==
-  dependencies:
-    "@babel/runtime" "^7.15.4"
-    "@gatsbyjs/potrace" "^2.2.0"
-    fs-extra "^10.1.0"
-    gatsby-core-utils "3.18.0-alpha-drupal-self-reference.18+7e41ad4fb8"
-    gatsby-sharp "0.12.0-alpha-drupal-self-reference.30+7e41ad4fb8"
-    graphql-compose "^9.0.7"
-    import-from "^4.0.0"
-    joi "^17.4.2"
-    mime "^3.0.0"
-    mini-svg-data-uri "^1.4.4"
-    svgo "^2.8.0"
-
 gatsby-plugin-utils@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-3.1.0.tgz#56abcc826786ae035a8edd0e652c492bd7b8f40e"
@@ -6216,6 +6199,24 @@ gatsby-plugin-utils@^3.1.0:
   dependencies:
     "@babel/runtime" "^7.15.4"
     joi "^17.4.2"
+
+gatsby-plugin-utils@^3.14.0:
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-3.14.0.tgz#d9b730689029d48f0527301b8b18cd9103a71383"
+  integrity sha512-Dj40dEPzkirU28vPNve7QtvPIqFahY8fmQMZH4aZXFI9h5AbMfCgtWGeBBeHvNB2CA8piyPcYrnNOL+oRe/zCg==
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+    "@gatsbyjs/potrace" "^2.2.0"
+    fastq "^1.13.0"
+    fs-extra "^10.1.0"
+    gatsby-core-utils "^3.20.0"
+    gatsby-sharp "^0.14.0"
+    graphql-compose "^9.0.7"
+    import-from "^4.0.0"
+    joi "^17.4.2"
+    mime "^3.0.0"
+    mini-svg-data-uri "^1.4.4"
+    svgo "^2.8.0"
 
 gatsby-react-router-scroll@^5.7.0:
   version "5.7.0"
@@ -6225,14 +6226,6 @@ gatsby-react-router-scroll@^5.7.0:
     "@babel/runtime" "^7.15.4"
     prop-types "^15.7.2"
 
-gatsby-sharp@0.12.0-alpha-drupal-self-reference.30+7e41ad4fb8:
-  version "0.12.0-alpha-drupal-self-reference.30"
-  resolved "https://registry.yarnpkg.com/gatsby-sharp/-/gatsby-sharp-0.12.0-alpha-drupal-self-reference.30.tgz#a598c7eabab771f53bff5441acb6f6078552cac2"
-  integrity sha512-A6Lgbv32LSck1stU6ze/gD6VLLq+U93z70XrRGlt5GzelZzohYxMd+19Yi7QDWjmIAxbnZ0hYvrThHNmlQIANQ==
-  dependencies:
-    "@types/sharp" "^0.30.0"
-    sharp "^0.30.3"
-
 gatsby-sharp@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/gatsby-sharp/-/gatsby-sharp-0.1.0.tgz#398bbbc47f66e7512d25ce94f506b723b1bb7b33"
@@ -6241,10 +6234,18 @@ gatsby-sharp@^0.1.0:
     "@types/sharp" "^0.29.5"
     sharp "^0.29.3"
 
-gatsby-source-drupal@5.19.0-alpha-drupal-self-reference.18:
-  version "5.19.0-alpha-drupal-self-reference.18"
-  resolved "https://registry.yarnpkg.com/gatsby-source-drupal/-/gatsby-source-drupal-5.19.0-alpha-drupal-self-reference.18.tgz#a5bfc962e45034a124905a64b73f70397cb2c3a9"
-  integrity sha512-Da9A0w2J882jQyXdJ87ti8NIHLHJaaHeUNtmJtJmsTfc7x20BtdQeRjw19qmCM5c2kVOPflDw/KDwUhuMa4MdA==
+gatsby-sharp@^0.14.0:
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/gatsby-sharp/-/gatsby-sharp-0.14.0.tgz#a272a63c7546f0e1397f999958eeebd0489f4fac"
+  integrity sha512-xTgU3Yxs8xbk3dQnuFw9Hsj4bUcI9upIk51ruNPwd+Q3CzN2QuKrkXuXPk+IRDIAKCXBI4dn78x/Xu/CVGZp/w==
+  dependencies:
+    "@types/sharp" "^0.30.0"
+    sharp "^0.30.3"
+
+gatsby-source-drupal@^5.20.0:
+  version "5.21.0"
+  resolved "https://registry.yarnpkg.com/gatsby-source-drupal/-/gatsby-source-drupal-5.21.0.tgz#0c64c7edc62022e57837128f7f61326e5d2fe4a0"
+  integrity sha512-kR1kE0AckKqnZr/7hZesQyX76BvpX2snhXJnO/ICWvecOKmvf8RungTCwjehd2Tw4TjyE8JAum/h99B5/WF8Ow==
   dependencies:
     "@babel/runtime" "^7.15.4"
     "@opentelemetry/semantic-conventions" "0.26.0"
@@ -6252,8 +6253,8 @@ gatsby-source-drupal@5.19.0-alpha-drupal-self-reference.18:
     bluebird "^3.7.2"
     body-parser "^1.20.0"
     fastq "^1.13.0"
-    gatsby-plugin-utils "3.12.0-alpha-drupal-self-reference.18+7e41ad4fb8"
-    gatsby-source-filesystem "4.18.0-alpha-drupal-self-reference.18+7e41ad4fb8"
+    gatsby-plugin-utils "^3.14.0"
+    gatsby-source-filesystem "^4.20.0"
     got "^11.8.5"
     http2-wrapper "^2.1.11"
     lodash "^4.17.21"
@@ -6262,16 +6263,16 @@ gatsby-source-drupal@5.19.0-alpha-drupal-self-reference.18:
     tiny-async-pool "^1.3.0"
     url-join "^4.0.1"
 
-gatsby-source-filesystem@4.18.0-alpha-drupal-self-reference.18+7e41ad4fb8:
-  version "4.18.0-alpha-drupal-self-reference.18"
-  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-4.18.0-alpha-drupal-self-reference.18.tgz#1a44041f9bb6c1442bda2117202c54481c0aec80"
-  integrity sha512-k+uA0CY31ADMhUgbqMZ6fN0dVgL86RtVFBZn7a3114Vt99INeRKq5WmZJfzstlN852EJMe5Jv2MKJwBHCzyuBA==
+gatsby-source-filesystem@^4.20.0:
+  version "4.20.0"
+  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-4.20.0.tgz#33bcd4d41497a4443dc6922a9706e841d3a6b0fe"
+  integrity sha512-U29GxTqmpDpjEONFoELGmm3q3a/z8SREDcSyfUqkKnbA0UMgSSZQMuWGMcnoNcU2E8GyyY72zjPq0cb7Jps3xw==
   dependencies:
     "@babel/runtime" "^7.15.4"
     chokidar "^3.5.3"
     file-type "^16.5.3"
     fs-extra "^10.1.0"
-    gatsby-core-utils "3.18.0-alpha-drupal-self-reference.18+7e41ad4fb8"
+    gatsby-core-utils "^3.20.0"
     got "^9.6.0"
     md5-file "^5.0.0"
     mime "^2.5.2"
