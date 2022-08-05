@@ -12,11 +12,12 @@
 Imoprtant: Full tutorial at https://www.drupal.org/docs/contributed-modules/gatsby-integration/2x-tutorial
 
 1.  **Clone/fork this repo**
+
     Run "yarn install" to install dependencies.
 
 2.  **Add environment variables.**
 
-    Create a file named ".env.development" with the following values:
+    Create a file named **.env.development** with the following values:
 
     ```shell
     DRUPAL_URL=[Copy from Drupal]
