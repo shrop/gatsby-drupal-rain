@@ -4,51 +4,36 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby minimal starter
+  Gatsby Drupal (Umami) starter
 </h1>
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+Imoprtant: Full tutorial at https://www.drupal.org/docs/contributed-modules/gatsby-integration/2x-tutorial
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+1.  **Clone/fork this repo**
+
+    Run "yarn install" to install dependencies.
+
+2.  **Add environment variables.**
+
+    Create a file named **.env.development** with the following values:
 
     ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
+    DRUPAL_URL=[Copy from Drupal]
+    JSON_API_KEY=[Copy from API user]
+    ENABLE_GATSBY_REFRESH_ENDPOINT=true
     ```
 
-2.  **Start developing.**
-
-    Navigate into your new site’s directory and start it up.
+3.  **Test your Gatsby build.**
 
     ```shell
-    cd my-gatsby-site/
     npm run develop
     ```
 
-3.  **Open the code and start customizing!**
+5.  **Open the code and start customizing!**
 
     Your site is now running at http://localhost:8000!
 
     Edit `src/pages/index.js` to see your site update in real-time!
-
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+    
