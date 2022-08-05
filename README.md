@@ -11,10 +11,10 @@
 
 Imoprtant: Full tutorial at https://www.drupal.org/docs/contributed-modules/gatsby-integration/2x-tutorial
 
-1. Clone/fork this repo
-   Run "yarn install" to install dependencies.
+1.  **Clone/fork this repo**
+    Run "yarn install" to install dependencies.
 
-3.  **Add environment variables.**
+2.  **Add environment variables.**
 
     Create a file named ".env.development" with the following values:
 
@@ -24,13 +24,13 @@ Imoprtant: Full tutorial at https://www.drupal.org/docs/contributed-modules/gats
     ENABLE_GATSBY_REFRESH_ENDPOINT=true
     ```
 
-2.  **Test your Gatsby build.**
+3.  **Test your Gatsby build.**
 
     ```shell
     npm run develop
     ```
 
-3.  **Open the code and start customizing!**
+5.  **Open the code and start customizing!**
 
     Your site is now running at http://localhost:8000!
 
