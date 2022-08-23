@@ -4,7 +4,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Umami Food Magazine`,
+    title: `Rain Demo`,
     siteUrl: `https://www.yourdomain.tld`
   },
   plugins: [

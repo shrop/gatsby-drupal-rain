@@ -4,7 +4,7 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby Drupal (Umami) starter
+  Gatsby Drupal (Rain) starter
 </h1>
 
 ## 🚀 Quick start

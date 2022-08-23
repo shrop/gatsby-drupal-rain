@@ -14,7 +14,7 @@ const Home = ({ data }) => {
 
   return (
     <Layout>
-      {/* <Meta title="Umami Food Magazine" description="An example Drupal site starter." /> */}
+      {/* <Meta title="Rain Demo" description="An example Drupal site starter." /> */}
       <Box
         pt={30}
         width={`100%`}
