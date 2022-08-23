@@ -9,7 +9,7 @@
 
 ## 🚀 Quick start
 
-Imoprtant: Full tutorial at https://www.drupal.org/docs/contributed-modules/gatsby-integration/2x-tutorial
+Imoprtant: Install https://bitbucket.org/mediacurrent/rain_demo and https://www.drupal.org/sandbox/jaykali/3299990. Copy the API key from the "API" user that is created.
 
 1.  **Clone/fork this repo**
 
