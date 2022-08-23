@@ -28,10 +28,10 @@ const Home = ({ data }) => {
               title={article.title}
               path={article.langcode + article.path.alias}
               image={
-                article.relationships.field_media_image.relationships.thumbnail.localFile.childImageSharp
+                article.relationships.field_thumbnail.relationships.field_image.localFile.childImageSharp
                   .gatsbyImageData
               }
-              alt={article.relationships.field_media_image.thumbnail.alt}
+              alt={article.relationships.field_thumbnail.thumbnail.alt}
               summary={
                 article.body.processed.replace(/(<([^>]+)>)/gi, '').substring(0, 300) + '...'
               }
@@ -61,12 +61,12 @@ export const pageQuery = graphql`
           alias
         }
         relationships {
-          field_media_image {
+          field_thumbnail {
             thumbnail {
               alt
             }
             relationships {
-              thumbnail {
+              field_image {
                 localFile {
                   childImageSharp {
                     gatsbyImageData(width: 600)

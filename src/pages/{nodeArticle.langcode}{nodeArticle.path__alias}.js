@@ -72,7 +72,7 @@ const Article = ({ data }) => {
                 <Img
                   as={GatsbyImage}
                   image={
-                    article.relationships.field_media_image.relationships.thumbnail.localFile.childImageSharp
+                    article.relationships.field_thumbnail.relationships.field_image.localFile.childImageSharp
                       .gatsbyImageData
                   }
                   w="full"
@@ -80,7 +80,7 @@ const Article = ({ data }) => {
                   objectFit="cover"
                   htmlWidth="672"
                   htmlHeight="448"
-                  alt={article.relationships.field_media_image.thumbnail.alt}
+                  alt={article.relationships.field_thumbnail.thumbnail.alt}
                   transition="all 0.2s"
                   _groupHover={{ transform: "scale(1.05)" }}
                 />
@@ -107,12 +107,12 @@ export const query = graphql`
         processed
       }
       relationships {
-        field_media_image {
+        field_thumbnail {
           thumbnail {
             alt
           }
           relationships {
-            thumbnail {
+            field_image {
               localFile {
                 childImageSharp {
                   gatsbyImageData(width: 600)
