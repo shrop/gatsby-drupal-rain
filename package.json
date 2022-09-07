@@ -12,7 +12,8 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "cypress:open": "cypress open"
   },
   "dependencies": {
     "@chakra-ui/gatsby-plugin": "^2.0.3",
