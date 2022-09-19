@@ -37,9 +37,9 @@ Imoprtant: Install https://bitbucket.org/mediacurrent/rain_demo and https://www.
 
     Edit `src/pages/index.js` to see your site update in real-time!
     
-## [Cypress](https://www.cypress.io) Testing
+## Cypress Testing
 
-Cypress provides end-to-end testing for Gatsby Drupal (Rain) starter. See tests in the `cypress` folder.
+Cypress provides end-to-end testing for Gatsby Drupal (Rain) starter. See tests in the `cypress` folder. Cypress configuration can be found [here](https://github.com/mediacurrent/gatsby-drupal-rain/blob/master/cypress.config.js).
 
 [Cypress commands](https://github.com/mediacurrent/gatsby-drupal-rain/blob/master/package.json#L16) which can be run from Yarn or NPM:
 
